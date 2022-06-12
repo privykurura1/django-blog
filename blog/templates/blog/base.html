@@ -25,9 +25,9 @@
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
 
   {% if title %}
-  <title>Django Blog - {{ title }}</title>
+  <title>ZOU MIDLANDS - {{ title }}</title>
   {% else %}
-  <title>Django Blog</title>
+  <title>ZOU MIDLANDS</title>
   {% endif %}
 </head>
 
@@ -35,15 +35,18 @@
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
       <div class="container">
-        <a class="navbar-brand mr-4" href="{% url 'index' %}">Django Blog</a>
+        <a class="navbar-brand mr-4" href="{% url 'index' %}">ZOU MIDLANDS</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
           aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
-            <a class="nav-item nav-link" href="{% url 'index' %}">Home</a>
-            <a class="nav-item nav-link" href="{% url 'about' %}">About</a>
+            <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
+            <a class="nav-item nav-link" href="{% url 'about' %}">Courses</a>
+            <a class="nav-item nav-link" href="https://www.zou.ac.zw">Enroll</a>
+            <a class="nav-item nav-link" href="{%url 'contact-us' %}">Contact Us</a>
+            <a class="nav-item nav-link" href="https://www.zou.ac.zw">District campuses</a>
           </div>
           <!-- Navbar Right Side -->
           <div class="navbar-nav">

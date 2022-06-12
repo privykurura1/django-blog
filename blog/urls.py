@@ -9,6 +9,7 @@ from .views import (
     UserPostListView,
     add_comment
 )
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 
 urlpatterns = [
@@ -19,5 +20,8 @@ urlpatterns = [
     path('post/<int:pk>/update/', PostUpdateView.as_view(), name='post_update'),
     path('post/<int:pk>/delete/', PostDeleteView.as_view(), name='post_delete'),
     path('about/', views.about, name='about'),
+    path('contact-us/', views.contact, name='contact-us'),
+    path('home/', views.home, name='home'),
     path('post/<int:pk>/comment/', add_comment, name='add_comment'),
 ]
+urlpatterns += staticfiles_urlpatterns()
