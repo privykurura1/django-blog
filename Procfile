@@ -1,1 +1,3 @@
-web:gunicorn web.wsgi -b 0.0.0.0:$PORT -w 10 
+release: python manage.py migrate
+web:gunicorn web.wsgi --log-file 
+
