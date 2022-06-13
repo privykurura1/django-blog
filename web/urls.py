@@ -13,7 +13,7 @@ urlpatterns = [
     # Blog urls
     path('', include('blog.urls')),
     # photoapp urls
-    path('photoapp/', include('photoapp.urls', namespace='photoapp')),
+   
     # Authentication Urls
     path('register/', user_views.register, name='register'),
     path('profile/', user_views.profile, name='profile'),
