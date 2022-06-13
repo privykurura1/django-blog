@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+import dj_database_url
+
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -80,7 +82,7 @@ WSGI_APPLICATION = 'web.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
-import dj_database_url
+
 
 DATABASES = {
     'default': {
