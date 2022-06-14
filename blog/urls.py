@@ -22,6 +22,8 @@ urlpatterns = [
     path('about/', views.about, name='about'),
     path('contact-us/', views.contact, name='contact-us'),
     path('home/', views.home, name='home'),
+    path('district/', views.district, name='district'),
+    path('regional/', views.regional, name='regional'),
     path('post/<int:pk>/comment/', add_comment, name='add_comment'),
 ]
 urlpatterns += staticfiles_urlpatterns()

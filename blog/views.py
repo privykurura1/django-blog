@@ -93,6 +93,13 @@ def contact(request):
 def home(request):
     return render(request, 'blog/home.html', {'title': 'home'})
 
+def district(request):
+    return render(request, 'blog/district.html', {'title': 'district'})
+
+def regional(request):
+    return render(request, 'blog/regional.html', {'title': 'regional'})
+
+
 
 @login_required
 def add_comment(request, pk):
