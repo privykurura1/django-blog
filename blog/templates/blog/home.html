@@ -1,26 +1,25 @@
 {% extends "blog/base.html" %}
 {% block content %}
- {%load staticfiles %}  
+{% load crispy_forms_tags %}
+ {%load staticfiles %}
+ 
   <style type="text/css">
-    /* coding with nick */
-*{
-    margin: 0px;
-    padding: 0px;
-}
+    body{
+        margin-top: 0px;
+        padding-top: 2px;
+        padding-left: 40px;
+    
+    }
 .bgimage{
     background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),url("{% static '/img/zou12.jpg' %}");
     background-size: 100%;
     width: 100%;
     height: 100vh;
-}
-.menu{
-    width: 100%;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.1);
+    padding-left: 0%;
 }
 
 .leftmenu{
-  width: 20%;
+  width: 0%;
   line-height: 100Px;
   float: left;
 }
@@ -37,7 +36,7 @@
     float: right;
 }
 .rightmenu ul{
-    margin-left: 200px;
+    margin-left: 100px;
 }
 .rightmenu ul li{
     display: inline-block;
@@ -47,7 +46,7 @@
     color: white;
     font-weight: bold;
     line-height: 100px;
-    margin-left: 40px;
+    margin-left: 4px;
     text-transform: uppercase;
     cursor: pointer;
   }
@@ -109,24 +108,6 @@ button:hover{
   </style>
   <body>
     <div class="bgimage">
-        <div class="menu">
-
-            <div class="leftmenu">
-                <h4>  </h4>
-            </div>
-
-            <div class="rightmenu">
-                <ul>
-                    <li id="firstlist"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div>
-
-        </div>
         <div class="text">
             <h4>ZOU MIDLANDS</h4>
             <h1> OPEN AND DISTANCE LEARNING </h1>
@@ -139,5 +120,12 @@ button:hover{
     <!-- /* coding with nick */ -->
 </body>
 
-   
+<div>
+<h2>Study with ZOU to make your dream the reality.</h2>
+</div>
+
+<img src="{% static 'img/zou12.jpg' %}" alt="" class="img-fluid  d-md-block about-img">
+<div>
+    <h4>YOU DO NOT HAVE TO WAIT FOR YOUR A LEVEL RESULTS TO STUDY WITH US.</h4>
+</div>
 {% endblock content %}
