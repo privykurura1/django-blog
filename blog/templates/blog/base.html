@@ -53,7 +53,7 @@
           <div class="navbar-nav">
             {% if user.is_authenticated %}
             <a class="nav-item nav-link" href="{% url 'post_create' %}">New Post</a>
-            <a class="nav-item nav-link" href="https://www.operanews.com">news</a>
+            <a class="nav-item nav-link" href="https://www.operanews.com">News</a>
             <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
             {% else %}
             <a class="nav-item nav-link" href="{% url 'login' %}">Login</a>
